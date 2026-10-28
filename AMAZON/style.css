@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+/***************************************
+          HEADER
+*************************************/
+
+.border{
+    border: 1px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border:hover{
+    border: 1px solid white;
+}
+
+/**Nav Bar**/
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.nav_logo{
+    height: 50px;
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #0f1111;
+    align-items: center;
+}
+
+.logo{
+    height: 50px;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(amazon_logo.png);
+
+}
+
+
+/** Deliver to India**/
+.navaddress{
+    height: 50px;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.location_icon{
+    display: flex;
+}
+
+.location_deliver{
+    color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 20px;
+}
+
+.location_india{
+    font-size: 1.2rem;
+}
+
+/** Nav Search Bar**/
+.nav_search{
+    display: flex;
+    height: 45px;
+    width: 1200px;
+    background-color: blue;
+}
+
+.nav_option{
+    width: 60px;
+    height: 45px;
+    border: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #f3f3f3;
+}
+
+.nav_input{
+    width: 100%;
+    border: none;
+    font-size: 1.2rem;
+}
+
+.search_icon{
+    width: 50px;
+    background-color: #febd68;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    color: #0f1111;
+    font-size: 1.2rem;
+}
+
+.nav_search:hover{
+    border: 1px solid orange;
+}
+
+/** Language **/
+.nav-language{
+    height: 50px;
+    width: 80px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.language{
+    display: flex;
+}
+
+.language span{
+    font-size: 20px;
+}
+
+.language p {
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+/** Sign In Account**/
+.nav-signin{
+    height: 50px;
+    width: 100px;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.signin{
+    font-size: 0.7rem;
+}
+
+.account{
+    font-size: 0.85rem;
+    font-weight: bolder;
+}
+
+/** Returns & Orders **/
+.nav-return{
+    padding-top: 1px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-return{
+    height: 50px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+.returns{
+    font-size: 0.7rem;
+}
+
+.order{
+    font-size: 0.85rem;
+    font-weight: bolder;
+}
+
+/**Nav Cart**/
+.nav_cart{
+    height: 50px;
+    width: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_cart i{
+    font-size: 30px;
+}
+
+.cart{
+    font-size: 0.85rem;
+}
+
+/** Panel **/
+.panel{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    background-color: #222f3d;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/** Panel All **/
+.panel-all{
+    height: 40px;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/**  panel options **/
+.panel-options{
+    width: 80%;
+    display: flex;
+}
+
+.panel-options  p{
+    margin: 10px;
+    font-size: 0.85rem;
+}
+
+/**  PANEL DEALS  **/
+.panel-deals{
+    width: 15%;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+/************************************
+             Hero Section
+*************************************/
+.hero-section{
+    height: 350px;
+    background-image: url(herobg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+}
+
+.hero-paragraph{
+    height: 40px;
+    width: 90%;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+}
+
+.hero-paragraph p{
+    font-size: 1.4rem;
+}
+
+.hero-paragraph a{
+    color: rgb(25, 25, 153);
+}
+
+
+
+/* PRODUCT SECTION */
+
+.product-section {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    padding: 30px;
+    background-color: rgba(250, 245, 245, 0.719);
+}
+
+/* Tablets and smaller laptops */
+@media (max-width: 1100px) {
+    .product-section {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* Mobile and tablets */
+@media (max-width: 750px) {
+    .product-section {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 400px) {
+    .product-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+/********    PRODUCTS ************/
+
+.product {
+    min-width: 170px;
+    height: 600px;
+    padding: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.product img {
+    width: 370px;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product h1 {
+    font-size: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/***************************
+            FOOTER 
+******************************/
+
+/* BACK BUTTON */
+.back-button{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #222f3dff;
+}
+
+/* FOOTER CONTENT  */
+.footer-content{
+    height: 500px;
+    background-color: darkslategray;
+    color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 100px;
+}
+
+.footer-content h2{
+    margin-bottom: 10px;
+}
+
+.footer-content p{
+    margin-bottom: 5px;
+    font-weight: lighter;
+}
+
